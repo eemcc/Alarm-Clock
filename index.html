@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <div id="clock"></div>
+    <div id="alarm">
+        <h1>Set Alarm</h1>
+        <select id="pickHour" name="hours"></select>:<select id="pickMinutes" name = "minutes"></select>:<select id="pickSeconds" name="seconds"></select>
+        <input type="radio" id="AM" value="AM" name="zone" checked><label>AM</label></input>
+        <input type="radio" id="PM" value="PM" id="PM" name="zone"><label>PM</label></input>
+        <input type="button" onClick="alarmClock()" value="Set Alarm" id="set"/>
+        <input type="button" onClick="resetAlarm()" value="Reset Alarm" id="reset" disabled />
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
